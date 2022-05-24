@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body>
+    <!-- Barra navegacion -->
+    <header>
+        <div class="logo"><img src="img/pet.png" alt="Logo veterinaria"></div>
+        <div class="barra-nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="registro_mascota.html">Registro</a>
+                <a href="#">Servicios</a>               
+            </nav>
+        </div>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+        <div class="fondo">
+            <div class="titulo">
+                <h1>Bienvenidos a InstaPet</h1>
+            </div>
+            <div class="contenido">
+                <div class="contenedor_formulario">
+                    <h2 id="tituloForm">Registro Mascota</h2>
+
+                    <form action="https://formspree.io/f/xrgjjbnp" method="post">
+
+                        <div class="caja">
+                            <label class="nom-campos">Nombre Mascota</label>
+                            <input name="nombre" class="campos" type="text" placeholder="Ingresa Tu Nombre" required="required">
+                        </div>
+                        <!-- *********************************************************** -->
+                        <div class="caja">
+                            <label class="nom-campos">Edad Mascota</label>
+                            <input  name="edad" class="campos" type="number" placeholder="Ingresa Tu Edad" required="required">
+                        </div>
+                        <div class="caja">
+                            <label class="nom-campos">Correo Electronico</label>
+                            <input name="correo" class="campos" type="email" placeholder="Ingresa Tu E-Mail" required="required">
+                        </div>
+
+                        <div class="caja">
+                            <label class="nom-campos">Contraseña</label>
+                            <input name="clave" class="campos" type="password" placeholder="Ingresa Tu Contraseña"
+                                required="required">
+                        </div>
+
+                        <div class="caja">
+                            <label class="nom-campos">Color De Su Mascota: </label>
+                            
+                            <input type="color" name="color" class="campos" id="campo-color">
+                        </div>
+
+                        <div class="caja">
+                            <label class="nom-campos">Consultas:</label>
+                            <textarea name="consulta"  cols="48" rows="5" required="required"></textarea>
+                        </div>
+
+                        <div class="caja">
+                            <input type="checkbox" name="terminos" value="aceptar" required="required">
+                            <label class="terminos">Acepta las condiciones del servico y la politica de privacidad:</label>
+                        </div>
+                        <div class="cajaBoton">
+                            <input class="boton" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55239.627674954856!2d-70.80591293484383!3d-33.46342716568945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c2dcc9d578a9%3A0x52ab78896981d198!2sClinicas%20Veterinarias%20Doctor%20Pet!5e0!3m2!1ses-419!2scl!4v1653376427336!5m2!1ses-419!2scl"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            </div>
+
+    </footer>
+</body>
+
+</html>
